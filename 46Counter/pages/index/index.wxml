@@ -1,0 +1,76 @@
+<!--index.wxml-->
+<view class="container">
+<form bindsubmit='formSubmit' bindreset='formReset' report-submit='true'>
+<text class="show">{{ss}}{{fen}}分!</text>
+<view class="lijie">
+  <text class="tinglilijie">听力部分</text>
+  <view class="list">
+     <view  class='stepper'>
+        <text>长篇对话:</text>
+        <text type='number' bindtap='bindSub01' class="jian">-</text>
+        <input name="input01" bindinput='bindManual01' value='{{in01}}'></input>
+        <text bindtap='bindPlus01' class="jia">+</text>
+      </view>    
+     
+      <view  class='stepper'>
+        <text>听力篇章:</text>
+        <text type='number' bindtap='bindSub02' class="jian">-</text>
+        <input name="input02" bindinput='bindManual02' value='{{in02}}'></input>
+        <text bindtap='bindPlus02' class="jia">+</text>
+      </view>
+      
+      <view  class='stepper'>
+        <text>讲座篇章:</text>
+        <text type='number' bindtap='bindSub03' class="jian">-</text>
+        <input name="input03" bindinput='bindManual03' value='{{in03}}'></input>
+        <text bindtap='bindPlus03' class="jia">+</text>
+      </view>
+   
+  </view>
+</view>
+ <text>\n</text>
+<view class="lijie">
+  <text class="tinglilijie">阅读部分</text> 
+  <view class="list">     
+      <view  class='stepper'>
+        <text>选词填空:</text>
+        <text type='number' bindtap='bindSub04' class="jian">-</text>
+        <input name="input04" bindinput='bindManual04' value='{{in04}}'></input>
+        <text bindtap='bindPlus04' class="jia">+</text>
+      </view>       
+  
+      <view  class='stepper'>
+        <text>长篇阅读:</text>
+        <text type='number' bindtap='bindSub05' class="jian">-</text>
+        <input name="input05" bindinput='bindManual05' value='{{in05}}'></input>
+        <text bindtap='bindPlus05' class="jia">+</text>
+      </view> 
+
+      <view  class='stepper'>
+        <text>仔细阅读:</text>
+        <text type='number' bindtap='bindSub06' class="jian">-</text>
+        <input name="input06" bindinput='bindManual06' value='{{in06}}'></input>
+        <text bindtap='bindPlus06' class="jia">+</text>
+      </view> 
+
+  </view>
+</view>
+ 
+<view class="lijie">
+  <image class="imageLeft" src="{{ssrc}}"></image>
+  <view class="list2">
+    <view class="stepper">
+      <text>翻译:0≤</text>
+      <input  name="input07" bindinput='bindManual07'  class="inp" type="number" maxlength='2' value='{{in07}}'></input>≤15    
+    </view>
+    <view class="stepper">
+      <text>写作:0≤</text>
+      <input  name="input08" bindinput='bindManual08' class="inp" type="number" maxlength='2' value='{{in08}}'></input>≤15  
+    </view>
+  </view>   
+</view>
+
+<button class="butt" formType="submit" type='primary'>计算</button>
+<button class="butt" formType="reset" >重置</button>
+</form>
+</view>

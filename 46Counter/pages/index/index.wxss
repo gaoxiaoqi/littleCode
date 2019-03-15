@@ -1,0 +1,66 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+ font-size: 20px;
+}
+.show{
+  font-size: 25px;
+}
+.lijie{
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgba(103, 230, 171, 0.733); */
+
+}
+.tinglilijie{
+  align-items: center;
+  margin-top: 2px;
+}
+.list{
+display: flex;
+align-items: center;
+flex-direction: column;
+ margin-left: 35rpx;
+ /* background-color: rgb(200, 182, 221); */
+}
+.list2{
+display: flex;
+flex-direction: column;
+ margin-left: 10px;
+ margin-top: 20px;
+ /* background-color: rgb(200, 182, 221); */
+}
+.imageLeft{
+  margin-left: 5px;
+  width: 120px;
+  height: 120px;
+}
+
+.butt{
+  margin-top: 10px;
+}
+
+/*主容器*/
+.stepper {
+display: flex;
+flex-direction: row;
+}
+.stepper input {
+width: 35px;
+height: 26px;
+text-align: center;
+border: 1px solid #cccccc;
+}
+
+.stepper text {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/*加号和减号*/
+.jia,.jian{
+  border:1px solid #cccccc;
+  width: 25px;
+  height: 26px;
+  text-align: center;
+}

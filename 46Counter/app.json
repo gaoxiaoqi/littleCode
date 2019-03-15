@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/more/more",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "英语四六级算分器",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "计算",
+        "iconPath": "images/ii.jpg"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多",
+        "iconPath": "images/mm.jpg"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.jpg"
+      }
+    ]
+  }
+}
